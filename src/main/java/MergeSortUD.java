@@ -6,10 +6,6 @@ import java.util.Arrays;
  */
 public class MergeSortUD {
 
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(new MergeSortUD().mergeSort(new int[]{1, -2, 88, 4, 99}, 0, 4)));
-    }
-
     public int[] mergeSort(int[] a, int lo, int hi) {
         int size = hi - lo + 1;
         int mid = lo + (size % 2 == 0 ? (size / 2) - 1 : (size / 2));
