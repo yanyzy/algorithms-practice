@@ -1,9 +1,5 @@
 package algorithms;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.Template;
-
-import java.util.List;
-
 /**
  * @author zhyee
  * @date 2018/11/15 上午10:25
@@ -55,8 +51,6 @@ public class GradeST<K, V> {
             this.val = val;
         }
     }
-
-
 }
 
 class Test {
@@ -74,10 +68,8 @@ class Test {
         gradeST.put("D", 1.00);
         gradeST.put("F", 0.00);
 
-
         String[] grades = new String[]{"A", "B", "C", "D"};
         System.out.println(new Test().average(grades, gradeST));
-
     }
 
     private Double average(String[] grades, GradeST<String, Double> gradeST) {
