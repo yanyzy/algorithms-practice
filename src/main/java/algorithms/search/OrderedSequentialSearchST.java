@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.search;
 
 import com.sun.tools.javac.util.Assert;
 
