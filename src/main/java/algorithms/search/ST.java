@@ -56,7 +56,7 @@ public class ST<K extends Comparable<K>, V> {
         for (int i = 0; i < keys.size(); i++) {
             if (key.compareTo((K) keys.get(i)) == 0) {
                 keys.remove(i);
-//                while (i < keys.size() - 1) {
+//                while (i < keys.M() - 1) {
 //                    keys.set(i, keys.get(i + 1));
 //                    values.set(i, values.get(i + 1));
 //                    i++;
