@@ -33,9 +33,7 @@ public class LSD {
     }
 
     public static void main(String[] args) {
-        String[] strings = new String[]{
-                "1ick750", "2iye230", "3cio720", "4pgc938", "3cio720", "1ick750", "2iye230", "2tye230"
-        };
+        String[] strings = new String[]{"1ick750", "2iye230", "3cio720", "4pgc938", "3cio720", "1ick750", "2iye230", "2tye230"};
         new LSD().sort(strings, 6);
         Assert.check(strings[0].equals("1ick750"));
         Assert.check(strings[1].equals("1ick750"));
