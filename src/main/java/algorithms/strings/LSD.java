@@ -13,8 +13,8 @@ public class LSD {
         for (int i = w - 1; i >= 0; i--) {
             int[] count = new int[R + 1];
             //统计频率
-            for (int j = 0; j < length; j++) {
-                count[a[j].charAt(i) + 1]++;
+            for (String anA1 : a) {
+                count[anA1.charAt(i) + 1]++;
             }
             //计算索引
             for (int j = 0; j < R; j++) {
@@ -22,13 +22,11 @@ public class LSD {
             }
             String[] aux = new String[length];
             //按索引重排
-            for (int j = 0; j < length; j++) {
-                aux[count[a[j].charAt(i)]++] = a[j];
+            for (String anA : a) {
+                aux[count[anA.charAt(i)]++] = anA;
             }
             //回写
-            for (int j = 0; j < length; j++) {
-                a[j] = aux[j];
-            }
+            System.arraycopy(aux, 0, a, 0, length);
         }
     }
 
