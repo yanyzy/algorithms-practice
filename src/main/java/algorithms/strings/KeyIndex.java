@@ -30,8 +30,11 @@ public class KeyIndex {
     }
 
     public static void main(String[] args) {
-        Student[] students = new Student[]{new Student("zhang", 2), new Student("wang", 1),
-                new Student("li", 2), new Student("wu", 2), new Student("yan", 3)};
+        Student[] students = new Student[]{new Student("zhang", 2),
+                new Student("wang", 1),
+                new Student("li", 2),
+                new Student("wu", 2),
+                new Student("yan", 3)};
         System.out.println(Arrays.toString(new KeyIndex().sort(students, 4)));
     }
 
