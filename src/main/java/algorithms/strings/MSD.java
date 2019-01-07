@@ -1,6 +1,6 @@
 package algorithms.strings;
 
-import java.util.Arrays;
+import com.sun.tools.javac.util.Assert;
 
 /**
  * @author zhyee
@@ -60,7 +60,10 @@ public class MSD {
                 "by",
                 "the"};
         MSD.sort(a);
-        System.out.println(Arrays.toString(a));
+        Assert.check(a[0].equals("by"));
+        Assert.check(a[1].equals("seashells"));
+        Assert.check(a[3].equals("she"));
+        Assert.check(a[5].equals("the"));
     }
 
 }
