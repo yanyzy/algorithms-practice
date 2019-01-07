@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class MSD {
     private static final int R = 256;
-    private static final int M = 1;
+    private static final int M = 1;//小数组阈值（设置为1，暂不引入插入排序）
     private static String[] aux;
 
     private static int charAt(String s, int d) {
@@ -27,6 +27,7 @@ public class MSD {
 
     public static void sort(String[] a, int lo, int hi, int d) {
         if (hi < lo + M) {
+            //对小数组切换排序算法-插入排序
             return;
         }
         int[] count = new int[R + 2];
